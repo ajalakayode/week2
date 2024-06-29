@@ -45,10 +45,10 @@ ul li:nth-child(2n){
 
 }
 
-img[scr^="html"]{
+img[scr^="http://"] img[scr^="https://"]{
     border-radius: 0, 50, 0, 50;
 }
 
-img[scr*="html"]{
+img[scr*="http://"], img[scr^="https://"]{
     border-radius: 50, 0, 50, 0;
 }
