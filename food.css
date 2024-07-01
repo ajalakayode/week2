@@ -1,54 +1,73 @@
-li:nth-of-type(2n){
-    background-color: fuchsia;
+section li:nth-of-type(even) {
+  background-color: fuchsia;
+  border-top: 12px solid blue;
 }
 
-section h2{
-    border: 15px solid blue;
-}
-section p{
-    line-height: 2;
-    font-size: 24px;
+section h2:nth-of-type(even) {
+  background-color: fuchsia;
+  border-top: 12px solid blue;
 }
 
-* section{
-    font-size: 24px;
+h1 {
+  border: 15px solid blue;
 }
 
-ol>li:nth-of-type(2n +1){
-    background-color: #ccc;
-    border-bottom: 12px double crimson;
+h2 {
+  border: 15px solid blue;
 }
 
-dl>dt~dd{
-    color: white;
-    background-color: rgb(0, 0, 225); 
+p {
+  line-height: 2;
+  font-size: 24px;
 }
 
-dt{
-    background-color: gray;
-    padding: 20px;
+section {
+  font-size: 24px;
 }
 
-dt+dd{
-    line-height: 2;
-    background-color: blue;
-    
-}
-ol li:nth-child(3n){
-    background-color: yellowgreen;
-    padding-block: 15px;
+section li:nth-of-type(odd) {
+  background-color: #ccc;
+  border-bottom: 12px double crimson;
 }
 
-ul li:nth-child(2n){
-    background-color: orangered;
-    padding-block: 15px;
-
+dl {
+  color: white;
+  background-color: rgb(0, 0, 255);
 }
 
-img[scr^="http://"] img[scr^="https://"]{
-    border-radius: 0, 50, 0, 50;
+dt {
+  background-color: gray;
+  padding: 20px;
 }
 
-img[scr*="http://"], img[scr^="https://"]{
-    border-radius: 50, 0, 50, 0;
+dt + dd {
+  line-height: 2;
+}
+
+ol > li:nth-of-type(3n) {
+  background-color: cornflowerblue;
+  padding-block: 15px;
+}
+
+ol > li:nth-of-type(2n) {
+  background-color: burlywood;
+  padding-block: 15px;
+}
+
+ul > li:nth-of-type(3n) {
+  background-color: yellowgreen;
+  padding-block: 15px;
+}
+
+ul > li:nth-of-type(2n) {
+  background-color: goldenrod;
+  padding-block: 15px;
+}
+
+img[src^="http"] {
+  border-radius: 0 50px 0 50px;
+}
+
+img[src^="./IMAGES_OF_FOOD"] {
+  border-radius: 50px 0 50px 0;
 }
